@@ -26,6 +26,14 @@ body {
   font-family: "BenchNine", sans-serif;
   overflow-x: hidden;
 }
+main {
+  padding-top: 0px;
+  margin-left: 15rem;
+  transition: 0.6s ease-in-out;
+}
+main:hover {
+    margin-left: 5rem;
+}
 section {
   padding: 0;
   min-height: 100vh;
@@ -47,14 +55,7 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
-main {
-  padding-top: 0px;
-  margin-left: 12rem;
-  transition: 0.4s ease-in-out;
-}
-main:hover {
-    margin-left: 5rem;
-}
+
 
 .navbar {
   position: fixed;
@@ -371,6 +372,9 @@ h2 {
   position: inherit;
   text-decoration-color: white;
 }
+.item.active img {
+  height: 100vh;
+}
 .carousel-caption {
   position: absolute;
   text-align: left;
@@ -401,7 +405,7 @@ h2 {
 }
 .scroll-down {
   height: 50px;
-  width: 30px;
+  width: 50px;
   border: 2px solid hsla(253, 52%, 14%, 0.95);
   background-color: hsla(253, 52%, 14%, 0.95);
   position: absolute;
